@@ -1,0 +1,6 @@
+{
+ "steps": 50,
+ "init": "blank",
+ "t_start": 999,
+ "note": "합성 5,000장을 만들 때 정한 값(develop/make_synth.py, 500장 밝기와 가장 가까운 t)"
+}

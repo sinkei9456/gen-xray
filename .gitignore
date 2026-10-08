@@ -1,0 +1,22 @@
+# 실행하면 생기는 폴더
+runs/
+output/
+doc/
+report/
+__pycache__/
+*.pyc
+# 대회 원본과 원본에서 만든 데이터(KAMP 데이터는 재배포하지 않음)
+data/dataset/
+data/material_500/
+data/v2_real500/
+data/test1/
+data/test2/
+# Release 에서 받는 큰 파일
+data/v5_synth5000/
+data/v3_synth500/
+data/v4_synth2000/
+models/diffusion/diffusion_pytorch_model.safetensors
+models/v2_real500/best.pt
+models/v3_synth500/best.pt
+models/v4_synth2000/best.pt
+models/yolo26s.pt

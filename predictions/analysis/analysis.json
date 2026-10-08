@@ -1,0 +1,159 @@
+{
+ "test1_errors": {
+  "n_fn": 3,
+  "fn_by_machine": {
+   "3호기": 2,
+   "2호기": 1
+  },
+  "fn_by_band": {
+   "beta_to_alpha": 2,
+   "below_beta": 1
+  },
+  "fn_by_kind": {
+   "point": 2,
+   "region": 1
+  },
+  "fn_conf_beta_to_alpha": [
+   0.187,
+   0.291
+  ],
+  "n_fp": 32,
+  "fp_by_machine": {
+   "3호기": 28,
+   "1호기": 4
+  },
+  "fp_by_zone": {
+   "stick": 31,
+   "bag": 1
+  },
+  "fp_dist_median": 32.8,
+  "hit_depth_p5": 33.0,
+  "fp_depth_ge_hit_p5": 30,
+  "fp_by_case": {
+   "boxed_in_other_shot": 23,
+   "found_in_all_shots": 7,
+   "beside_missed": 1,
+   "this_shot_only": 1
+  },
+  "fp_layout_diff_max": 4.4
+ },
+ "synthetic_vs_real": [
+  {
+   "machine": "1호기",
+   "set": "synthetic",
+   "n": 1577,
+   "bg": 209.0,
+   "pack": 146.0,
+   "stick": 113.0,
+   "noise_pack": "1.7/2.4/6.9",
+   "noise_bg": "0.7/1.2/6.4"
+  },
+  {
+   "machine": "1호기",
+   "set": "test1_real",
+   "n": 659,
+   "bg": 210.0,
+   "pack": 147.0,
+   "stick": 114.0,
+   "noise_pack": "1.6/1.7/1.9",
+   "noise_bg": "0.3/0.3/0.3"
+  },
+  {
+   "machine": "2호기",
+   "set": "synthetic",
+   "n": 1757,
+   "bg": 209.0,
+   "pack": 111.0,
+   "stick": 77.0,
+   "noise_pack": "2.0/2.4/5.1",
+   "noise_bg": "0.8/1.1/4.5"
+  },
+  {
+   "machine": "2호기",
+   "set": "test1_real",
+   "n": 607,
+   "bg": 210.0,
+   "pack": 112.0,
+   "stick": 78.0,
+   "noise_pack": "1.9/2.2/2.5",
+   "noise_bg": "0.3/1.0/1.4"
+  },
+  {
+   "machine": "3호기",
+   "set": "synthetic",
+   "n": 1666,
+   "bg": 209.0,
+   "pack": 127.0,
+   "stick": 93.0,
+   "noise_pack": "1.9/2.5/5.7",
+   "noise_bg": "0.8/1.2/4.6"
+  },
+  {
+   "machine": "3호기",
+   "set": "test1_real",
+   "n": 604,
+   "bg": 210.0,
+   "pack": 128.0,
+   "stick": 96.0,
+   "noise_pack": "3.2/3.3/3.5",
+   "noise_bg": "0.6/0.9/1.5"
+  }
+ ],
+ "synthetic_extra": {
+  "1호기": {
+   "synthetic_bg_noise_above_real_p90": 1.0,
+   "synthetic_minus_500": {
+    "bg": -1.0,
+    "pack": -1.0,
+    "stick": -1.0
+   }
+  },
+  "2호기": {
+   "synthetic_bg_noise_above_real_p90": 0.295,
+   "synthetic_minus_500": {
+    "bg": -1.0,
+    "pack": -1.0,
+    "stick": -1.0
+   }
+  },
+  "3호기": {
+   "synthetic_bg_noise_above_real_p90": 0.39,
+   "synthetic_minus_500": {
+    "bg": -1.0,
+    "pack": 0.0,
+    "stick": -1.0
+   }
+  }
+ },
+ "test2_by_kind": {
+  "cut bag, no stick": {
+   "normal": 20
+  },
+  "cut bag, stick": {
+   "normal": 77
+  },
+  "full bag": {
+   "defect": 3
+  },
+  "no bag": {
+   "normal": 7
+  }
+ },
+ "raw_diffusion_minus_500": {
+  "1호기": {
+   "bg": 4.9,
+   "pack": 20.8,
+   "stick": 23.3
+  },
+  "2호기": {
+   "bg": 8.3,
+   "pack": 37.6,
+   "stick": 40.6
+  },
+  "3호기": {
+   "bg": 6.1,
+   "pack": 30.1,
+   "stick": 36.4
+  }
+ }
+}

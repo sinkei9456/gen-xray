@@ -1,0 +1,26 @@
+# 분석 환경: conda 가상환경 venv, Python 3.11.16, NVIDIA GB10(CUDA 13.0, 드라이버 580.126.09), Ubuntu(aarch64)
+# 1) conda create -n venv python=3.11.16 -y && conda activate venv
+# 2) torch 는 CUDA 13.0 휠: pip install torch==2.14.0 torchvision==0.29.0 --index-url https://download.pytorch.org/whl/cu130
+#    (다른 GPU 는 그 GPU 의 CUDA 에 맞는 torch 2.14.0 휠)
+# 3) pip install -r requirements.txt
+# 전체 고정 목록(분석에 쓴 가상환경의 pip freeze)은 requirements-lock.txt
+torch==2.14.0
+torchvision==0.29.0
+ultralytics==8.4.157
+ultralytics-thop==2.1.6
+diffusers==0.40.0
+transformers==5.17.0
+accelerate==1.15.0
+safetensors==0.8.0
+huggingface_hub==1.32.0
+opencv-python-headless==5.0.0.93
+numpy==2.4.6
+scipy==1.17.1
+pandas==3.0.6
+polars==1.44.2
+matplotlib==3.11.2
+pillow==12.3.0
+PyYAML==6.0.3
+tabulate==0.10.0
+tqdm==4.70.1
+mistune==3.1.4   # 제출 코드는 쓰지 않음(보고서 HTML을 만든 문서 도구용)

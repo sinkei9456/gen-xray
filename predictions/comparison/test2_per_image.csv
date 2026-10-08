@@ -1,0 +1,108 @@
+image,kind,v1_decision,v1_n_defect_boxes,v1_max,v2_decision,v2_n_defect_boxes,v2_max,v3_decision,v3_n_defect_boxes,v3_max,v4_decision,v4_n_defect_boxes,v4_max,v5_decision,v5_n_defect_boxes,v5_max
+002_20200713_202507(0),full bag,defect,3,26.2152,defect,3,0.6498,defect,3,0.7197,defect,3,0.6838,defect,3,0.6834
+002_20200727_110524(7),"cut bag, no stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_110529(6),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_110632(2),"cut bag, stick",defect,1,26.0716,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_110645(7),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_110753(2),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_110806(8),"cut bag, stick",defect,1,26.4508,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_110914(3),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_111038(1),no bag,defect,2,18.366,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_111132(2),"cut bag, no stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_111239(7),"cut bag, stick",defect,1,25.4933,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_111347(3),"cut bag, stick",defect,1,26.1304,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_111441(3),"cut bag, stick",defect,1,23.7664,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_111454(8),"cut bag, stick",defect,1,25.5492,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_111648(3),"cut bag, no stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_111742(3),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_111849(9),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_111943(9),"cut bag, stick",defect,1,23.5523,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_112037(9),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_112148(2),"cut bag, no stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_112242(2),no bag,defect,1,23.5441,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_112336(2),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_112341(2),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_112430(3),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_112443(8),"cut bag, stick",defect,1,20.1868,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_112537(8),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_112631(9),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_112645(4),"cut bag, stick",defect,1,26.0645,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_112930(2),"cut bag, no stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_112943(7),"cut bag, no stick",defect,1,17.8834,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_113037(7),"cut bag, no stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_113131(8),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_113239(4),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_113333(4),"cut bag, stick",defect,1,24.9444,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_113346(9),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_113747(4),"cut bag, stick",defect,2,21.6667,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_113854(9),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_113908(4),"cut bag, stick",defect,1,22.4207,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_114002(5),"cut bag, stick",defect,1,20.864,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_114016(0),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_114123(5),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_114126(2),"cut bag, no stick",defect,1,16.5071,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_114220(2),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_114405(6),"cut bag, stick",defect,1,17.5811,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_114459(7),"cut bag, no stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_114513(1),"cut bag, stick",defect,1,20.273,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_114607(2),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_114714(8),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_114822(4),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_115040(1),"cut bag, stick",defect,1,23.4739,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_115147(7),"cut bag, no stick",defect,1,17.3514,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_115201(2),"cut bag, no stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_115255(2),"cut bag, stick",defect,1,22.6912,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_115308(8),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_115402(8),"cut bag, no stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_115416(3),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_115510(3),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_115526(5),no bag,defect,1,23.158,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_115620(5),"cut bag, stick",defect,1,23.2927,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_115634(1),"cut bag, no stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_115728(1),"cut bag, stick",defect,1,22.4839,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_115741(6),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_115822(2),"cut bag, stick",defect,1,21.2221,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_115835(7),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_115929(8),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_120023(8),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_120134(0),no bag,defect,1,22.2557,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_120228(0),no bag,defect,2,22.3944,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_120322(1),"cut bag, no stick",defect,1,17.1004,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_120429(7),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_120523(7),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_120631(2),"cut bag, stick",defect,1,17.3207,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_120835(5),"cut bag, stick",defect,3,23.1859,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_120943(0),"cut bag, no stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_121037(1),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_121131(2),"cut bag, stick",defect,1,16.5934,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_121144(7),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_121238(7),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_121332(7),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_121537(1),no bag,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_121541(9),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_121631(1),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_121725(1),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_121819(1),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_121913(2),"cut bag, stick",defect,1,18.1594,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_121926(7),"cut bag, stick",defect,1,23.4052,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_122023(4),"cut bag, no stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_122117(5),"cut bag, stick",defect,1,22.1008,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_122131(0),"cut bag, no stick",defect,1,16.5184,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_122225(0),"cut bag, stick",defect,1,16.0006,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_122319(0),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_122332(6),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_122413(1),"cut bag, stick",defect,1,17.8967,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_122426(6),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_122630(9),no bag,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_122724(9),"cut bag, stick",defect,1,16.4449,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_122819(0),"cut bag, no stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_122832(5),"cut bag, no stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_122926(5),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_122940(0),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_123034(0),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_123047(6),"cut bag, stick",defect,1,17.0515,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_123141(6),"cut bag, stick",defect,1,17.7533,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_123155(1),"cut bag, stick",normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200727_123318(9),"cut bag, no stick",defect,2,20.9397,normal,0,0.0,normal,0,0.0,normal,0,0.0,normal,0,0.0
+002_20200904_230042(8),full bag,defect,1,21.2819,defect,1,0.656,defect,1,0.6821,defect,1,0.6743,defect,1,0.6597
+002_20200904_230047(1),full bag,defect,1,20.5559,recheck,0,0.3119,defect,1,0.7262,defect,1,0.6542,defect,1,0.6415

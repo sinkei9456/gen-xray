@@ -1,0 +1,16 @@
+{
+ "kernel": 5,
+ "threshold": 16.0,
+ "val": {
+  "kernel": 5.0,
+  "threshold": 16.0,
+  "tp": 1059.0,
+  "fp": 134.0,
+  "fn": 88.0,
+  "precision": 0.8876781223805532,
+  "recall": 0.923278116826504,
+  "f1": 0.9051282051282051
+ },
+ "rule": "--val 데이터에서 F1 최대, 같으면 작은 필터·큰 임계값",
+ "tuned_on": "data/v2_real500/all/images"
+}

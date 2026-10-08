@@ -1,0 +1,26 @@
+model,kind,images,defect,recheck,normal
+v1,전체,107,45,0,62
+v1,full bag,3,3,0,0
+v1,"cut bag, no stick",20,6,0,14
+v1,"cut bag, stick",77,31,0,46
+v1,no bag,7,5,0,2
+v2,전체,107,2,1,104
+v2,full bag,3,2,1,0
+v2,"cut bag, no stick",20,0,0,20
+v2,"cut bag, stick",77,0,0,77
+v2,no bag,7,0,0,7
+v3,전체,107,3,0,104
+v3,full bag,3,3,0,0
+v3,"cut bag, no stick",20,0,0,20
+v3,"cut bag, stick",77,0,0,77
+v3,no bag,7,0,0,7
+v4,전체,107,3,0,104
+v4,full bag,3,3,0,0
+v4,"cut bag, no stick",20,0,0,20
+v4,"cut bag, stick",77,0,0,77
+v4,no bag,7,0,0,7
+v5,전체,107,3,0,104
+v5,full bag,3,3,0,0
+v5,"cut bag, no stick",20,0,0,20
+v5,"cut bag, stick",77,0,0,77
+v5,no bag,7,0,0,7
