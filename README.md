@@ -1,10 +1,10 @@
 # Gen X-ray
 
+English | [한국어](README.ko.md)
+
 **Training an X-ray foreign-object detector on Diffusion-synthesized images only**
 
 In this food-packaging X-ray dataset, the inspection machine has drawn a colored box around every foreign object it found, directly on the image. A detector trained on these images learns the boxes, not the 3–4 px foreign objects. Gen X-ray never trains on real images. It uses 500 human-labeled images only as material, trains a conditional Diffusion model to draw bags and sticks, inserts real defect patches and programmatically drawn shapes following X-ray attenuation, and gets the labels for free. A YOLO26s detector trained on 5,000 such synthetic images reaches **F1 0.995** on 1,870 real test images (3,194 foreign objects) that were never used for training or threshold selection.
-
-한국어 설명서: [README.ko.md](README.ko.md)
 
 ![Inspection-machine marks on the raw images](docs/figures/fig1_data_problem.png)
 
@@ -63,7 +63,7 @@ src/                        source code: shared modules, develop/ (reproduction)
 environment.yml, requirements.txt, requirements-lock.txt
 ```
 
-Code comments are in Korean. Where they say "제출본" or "제출 폴더" they mean the competition submission, which also contained the data and weights that are distributed separately here.
+Code comments are in Korean. Where they say "제출본" or "제출 폴더" they mean the competition submission, which also contained the data and weights that are distributed separately here; "README N절" refers to the sections of the detailed Korean manual [docs/manual_ko.md](docs/manual_ko.md).
 
 ## Setup
 
