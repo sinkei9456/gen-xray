@@ -67,14 +67,31 @@ environment.yml, requirements.txt, requirements-lock.txt
 
 ## 실행 환경
 
-Ubuntu(aarch64), NVIDIA GB10(CUDA 13.0), Python 3.11.16, torch 2.14.0+cu130, ultralytics 8.4.157, diffusers 0.40.0에서 확인했다.
+분석(Diffusion 학습, 합성, YOLO 학습, 평가)에 쓴 환경은 다음과 같다.
+
+| 항목 | 버전 |
+|---|---|
+| OS, CPU | Ubuntu 24.04.4 LTS, aarch64 (ARM 64비트) |
+| 장비 | NVIDIA DGX Spark (GB10 Grace Blackwell 슈퍼칩, CPU 와 GPU 가 메모리 121GB 하나를 같이 씀) |
+| GPU | GB10, 드라이버 580.126.09, CUDA 13.0 |
+| 환경 관리 | conda 25.9.1, Python 3.11.16 가상환경 |
+| 주요 패키지 | torch 2.14.0 (CUDA 13.0 휠), torchvision 0.29.0, ultralytics 8.4.157, diffusers 0.40.0, transformers 5.17.0, accelerate 1.15.0, opencv-python-headless 5.0.0.93, numpy 2.4.6, scipy 1.17.1, pandas 3.0.6, matplotlib 3.11.2, pillow 12.3.0 |
+| 전체 목록 | `requirements-lock.txt` (그 환경의 pip freeze) |
 
 ```bash
 conda env create -f environment.yml      # conda 가상환경 "venv" 만들기
 conda activate venv
 ```
 
-또는 GPU에 맞는 CUDA용 torch 2.14.0을 설치한 뒤 `pip install -r requirements.txt`를 실행한다. `requirements-lock.txt`는 분석에 쓴 환경의 `pip freeze` 전체다.
+또는 직접 설치한다.
+
+```bash
+conda create -n venv python=3.11.16 -y && conda activate venv
+pip install torch==2.14.0 torchvision==0.29.0 --index-url https://download.pytorch.org/whl/cu130   # 다른 GPU는 그 CUDA에 맞는 torch 2.14.0 휠
+pip install -r requirements.txt
+```
+
+`environment.yml`로 새로 만든 환경도 패키지 버전이 같다. 아래 "실행"의 처음부터 전부 재현은 이렇게 새로 만든 환경에서(대회 제출본으로, 같은 기계에서) 돌렸고, 가중치와 결과가 모두 같았다.
 
 ## 데이터
 

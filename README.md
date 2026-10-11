@@ -67,14 +67,31 @@ Code comments are in Korean. Where they say "제출본" or "제출 폴더" they 
 
 ## Setup
 
-Tested on Ubuntu (aarch64) with an NVIDIA GB10 (CUDA 13.0), Python 3.11.16, torch 2.14.0+cu130, ultralytics 8.4.157, diffusers 0.40.0.
+The analysis environment (Diffusion training, synthesis, YOLO training, evaluation) was:
+
+| Item | Version |
+|---|---|
+| OS, CPU | Ubuntu 24.04.4 LTS, aarch64 (ARM 64-bit) |
+| Machine | NVIDIA DGX Spark (GB10 Grace Blackwell superchip, CPU and GPU share one 121 GB memory) |
+| GPU | GB10, driver 580.126.09, CUDA 13.0 |
+| Environment manager | conda 25.9.1, environment with Python 3.11.16 |
+| Main packages | torch 2.14.0 (CUDA 13.0 wheel), torchvision 0.29.0, ultralytics 8.4.157, diffusers 0.40.0, transformers 5.17.0, accelerate 1.15.0, opencv-python-headless 5.0.0.93, numpy 2.4.6, scipy 1.17.1, pandas 3.0.6, matplotlib 3.11.2, pillow 12.3.0 |
+| Full list | `requirements-lock.txt` (pip freeze of that environment) |
 
 ```bash
 conda env create -f environment.yml      # creates the conda env "venv"
 conda activate venv
 ```
 
-Or install the CUDA build of torch 2.14.0 that matches your GPU, then `pip install -r requirements.txt`. `requirements-lock.txt` is the full `pip freeze` of the environment used.
+Or install it directly:
+
+```bash
+conda create -n venv python=3.11.16 -y && conda activate venv
+pip install torch==2.14.0 torchvision==0.29.0 --index-url https://download.pytorch.org/whl/cu130   # other GPUs: the torch 2.14.0 wheel for your CUDA
+pip install -r requirements.txt
+```
+
+An environment built from `environment.yml` has the same package versions. The full from-scratch rerun described under "Usage" was done in such a newly built environment (from the competition submission, on the same machine) and reproduced all weights and results.
 
 ## Data
 

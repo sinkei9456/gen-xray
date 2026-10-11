@@ -107,11 +107,14 @@ data/
 
 conda 가상환경 **venv**를 쓴다(분석에 쓴 것과 같은 패키지 버전).
 
-| 항목 | 값 |
+| 항목 | 버전 |
 |---|---|
-| OS·하드웨어 | Ubuntu(aarch64), NVIDIA GB10(통합 메모리 121GB), CUDA 13.0, 드라이버 580.126.09 |
-| Python | 3.11.16 |
-| 주요 패키지 | torch 2.14.0(+cu130), torchvision 0.29.0, ultralytics 8.4.157, diffusers 0.40.0, transformers 5.17.0, accelerate 1.15.0, opencv-python-headless 5.0.0.93, numpy 2.4.6, scipy 1.17.1, pandas 3.0.6, matplotlib 3.11.2, pillow 12.3.0 |
+| OS, CPU | Ubuntu 24.04.4 LTS, aarch64 (ARM 64비트) |
+| 장비 | NVIDIA DGX Spark (GB10 Grace Blackwell 슈퍼칩, CPU 와 GPU 가 메모리 121GB 하나를 같이 씀) |
+| GPU | GB10, 드라이버 580.126.09, CUDA 13.0 |
+| 환경 관리 | conda 25.9.1, Python 3.11.16 가상환경 |
+| 주요 패키지 | torch 2.14.0 (CUDA 13.0 휠), torchvision 0.29.0, ultralytics 8.4.157, diffusers 0.40.0, transformers 5.17.0, accelerate 1.15.0, opencv-python-headless 5.0.0.93, numpy 2.4.6, scipy 1.17.1, pandas 3.0.6, matplotlib 3.11.2, pillow 12.3.0 |
+| 전체 목록 | `requirements-lock.txt` (그 환경의 pip freeze) |
 
 설치(둘 중 하나):
 
