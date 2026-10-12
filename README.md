@@ -51,6 +51,60 @@ More figures are in [`docs/figures/`](docs/figures/).
 - Each model was trained once (seed 0). The final model was chosen among v3–v5 on test set 1 with a rule fixed beforehand; v5 and v4 differ by one object.
 - Synthetic noise differs from real noise: the 90th percentile of bag noise in synthetic images is 1.6–3.6× the real value, while on machine 3 the median synthetic image is smoother than real. Machine 3 also has 28 of the 32 false detections; this is not proven to be the cause.
 
+## Follow-up experiment: anomaly detection (after submission)
+
+The Diffusion model can also draw clean bag+stick images with no foreign object. So instead of supervised training with inserted defects, could anomaly detection, which learns only normal images and flags whatever differs, do the job? After the submission, two such methods were tested on the same test sets.
+
+**Methods**
+
+- **PatchCore**: collect the features (ImageNet-pretrained WideResNet50) of every small patch of normal images; the anomaly score of a patch in a new image is its distance to the nearest normal patch. Two normal sets were tried: ① 400 clean synthetic images drawn by this Diffusion model, ② 400 real images with machine marks and foreign objects erased.
+- **Diffusion restoration difference**: add noise to the test image (t=200 shallow, t=400 deep), let this Diffusion model restore it, and use the difference from the input as the anomaly score. The model learned only normal bags and sticks, so foreign objects disappear in the restored image.
+- **Boxes**: 10×10 boxes at high-score points inside the bag, matched to ground truth with the same rule as above.
+- **Fairness**: same test sets as above. Settings (feature layers, image upscaling, smoothing, etc.) and thresholds were chosen by F1 on validation sets only, and the test sets were opened only after that. PatchCore ① and the restoration methods use the 500 synthetic validation images (same as v5); PatchCore ② uses 100 real images that overlap neither the test sets nor normal set ②. The restoration methods do not use these 100 real images because the Diffusion model already saw them as training material.
+
+**Results**
+
+Test set 1 (1,870 real images, 3,194 foreign objects):
+
+| Method | Missed | False det. | Precision | Recall | F1 |
+|---|---:|---:|---:|---:|---:|
+| v1 black-hat filter (no training) | 217 | 560 | 0.842 | 0.932 | 0.885 |
+| **v5 YOLO26s, synthetic 5,000 (final)** | **3** | **32** | **0.990** | **0.999** | **0.995** |
+| PatchCore, normal ① clean synthetic | 33 | 6,443 | 0.329 | 0.990 | 0.494 |
+| PatchCore, normal ② erased real | 59 | 995 | 0.759 | 0.982 | 0.856 |
+| Diffusion restoration difference, t=200 | 1,093 | 57 | 0.974 | 0.658 | 0.785 |
+| Diffusion restoration difference, t=400 | 1,347 | 76 | 0.960 | 0.578 | 0.722 |
+
+Test set 2, the 104 images with a cut-off or missing bag (truly normal images): images with at least one false detection.
+
+| Method | Images with a false detection |
+|---|---:|
+| v1 black-hat filter | 42 |
+| v5 | 0 |
+| PatchCore, normal ① clean synthetic | 104 |
+| PatchCore, normal ② erased real | 104 |
+| Diffusion restoration difference, t=200 | 77 |
+| Diffusion restoration difference, t=400 | 79 |
+
+Unseen-shape test: one object of a shape absent from training was inserted into each of 300 real test-set-1 images. Darkness, blur and position on the stick follow the training rules; only the shape differs. Objects found:
+
+| Inserted object | Inserted | v5 ≥ α | v5 incl. re-inspect (≥ β) | PatchCore ① | PatchCore ② | Restoration t=200 | Restoration t=400 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Real dot patch (control, in training) | 300 | 298 | 300 | 298 | 295 | 174 | 144 |
+| Long wire, 40–80 px (training: 6–30 px) | 287 | 268 | 286 | 287 | 287 | 287 | 287 |
+| Big chunk, 10–16 px (training: 3–8 px) | 300 | 299 | 300 | 300 | 300 | 300 | 299 |
+| Ring, 8–12 px diameter (not in training) | 300 | 300 | 300 | 300 | 300 | 285 | 271 |
+| Faint thin wire, 20–60 px, 1 px wide, half the darkness | 296 | 185 | 247 | 296 | 296 | 34 | 12 |
+
+Wires are fewer than 300 because images with no room on a stick were skipped. Because PatchCore makes many false detections, we also counted how often a box was already at the same position in the image before insertion: for the faint wire, 30 of 296 (①) and 7 of 296 (②). Finding all 296 is therefore not chance.
+
+**Takeaways**
+
+- Anomaly detection alone is worse than v5 and even than the untrained v1 filter. Most false detections sit on bag edges and plastic, structures that are normal but rare, and 77–104 of the 104 truly normal images get a false detection.
+- Using clean synthetic images as the normal set gives the most false detections, because the gap between synthetic and real images also looks anomalous. With the same synthetic images, supervised training with inserted defects (v5) was the right choice.
+- Restoration difference makes few false detections, but bag borders stay as bright as foreign objects. The threshold chosen on synthetic validation therefore ends up high, and most machine-2 objects are missed.
+- PatchCore finds the unseen faint thin wire better than v5. But keeping the v5 decision and sending v5-passed images with an anomaly box to re-inspection finds no additional object on test set 1, and turns 77–104 of the 104 normal test-set-2 images into re-inspection. Anomaly detection is useful only as a re-inspection aid against unseen shapes, not for the reject decision.
+
 ## Repository layout
 
 ```
