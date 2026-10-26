@@ -1,5 +1,7 @@
 # Gen X-ray
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23656407.svg)](https://doi.org/10.5281/zenodo.23656407)
+
 **Diffusion 모델로 만든 합성 이미지만으로 학습한 X-ray 이물 탐지**
 
 [English](README.md) | 한국어 | 자세한 사용 설명서: [docs/manual_ko.md](docs/manual_ko.md)
@@ -206,7 +208,11 @@ python release/predict.py --src "../data/dataset/test1/yolov3/X선이물검출�
 
 단계별 결과 파일, 판정 기준, 오검출 경우 나누기 등 자세한 내용은 [docs/manual_ko.md](docs/manual_ko.md)에 있다.
 
-## 데이터 인용
+## 인용
+
+이 저장소(모든 버전): Kim, Jeonghwan. Gen X-ray: training an X-ray foreign-object detector on Diffusion-synthesized images only. Zenodo. https://doi.org/10.5281/zenodo.23656407 (이번 버전 v1.1: https://doi.org/10.5281/zenodo.23656408). 인용 정보 파일 `CITATION.cff`가 들어 있다.
+
+### 데이터
 
 중소벤처기업부, Korea AI Manufacturing Platform(KAMP), X-ray 검사장비 AI 데이터셋, KAIST(㈜임픽스, 한양대학교 산학협력단, ㈜아큐라소프트), 2020.12.14., www.kamp-ai.kr
 

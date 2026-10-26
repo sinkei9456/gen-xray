@@ -1,5 +1,7 @@
 # Gen X-ray
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23656407.svg)](https://doi.org/10.5281/zenodo.23656407)
+
 English | [한국어](README.ko.md)
 
 **Training an X-ray foreign-object detector on Diffusion-synthesized images only**
@@ -204,7 +206,11 @@ python release/predict.py --src "../data/dataset/test1/yolov3/X선이물검출�
 
 **Reproduce everything from scratch** (about 8–10 hours on GB10): do not add the release files except `yolo26s.pt`, delete `models/v5_synth5000/best.pt`, and run `bash develop/run_all.sh`. It trains the Diffusion model, synthesizes the 5,000 images, and trains and evaluates v2–v5. All seeds are fixed and training runs in deterministic mode; a full rerun from scratch on the same machine reproduced the Diffusion and YOLO weights and all results exactly. On other GPUs or versions small numerical differences can appear, and since v5 and v4 differ by one object, the final-model choice could change.
 
-## Citation of the data
+## Citation
+
+This repository (all versions): Kim, Jeonghwan. Gen X-ray: training an X-ray foreign-object detector on Diffusion-synthesized images only. Zenodo. https://doi.org/10.5281/zenodo.23656407 (this release v1.1: https://doi.org/10.5281/zenodo.23656408). A `CITATION.cff` file is included.
+
+### Data
 
 Ministry of SMEs and Startups., and KAIST (Korea Advanced Institute of Science and Technology). (2020, December 14). X-ray inspection equipment AI dataset. Korea AI Manufacturing Platform (KAMP). https://www.kamp-ai.kr/
 
