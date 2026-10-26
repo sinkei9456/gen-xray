@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Gen X-ray: training an X-ray foreign-object detector on Diffusion-synthesized images only"
+authors:
+  - family-names: Kim
+    given-names: Jeonghwan
+    affiliation: Independent researcher
+repository-code: "https://github.com/sinkei9456/gen-xray"
+license: AGPL-3.0
+version: 1.1.0
+date-released: 2026-10-26
+keywords:
+  - X-ray inspection
+  - foreign object detection
+  - synthetic training data
+  - diffusion model
+  - YOLO
+  - food packaging
+abstract: >-
+  Food-packaging X-ray images carry inspection-machine marks drawn around every
+  foreign object, so a detector cannot be trained on the real images. Gen X-ray
+  uses 500 labeled images only as material, trains a conditional Diffusion model
+  to draw bags and sticks, inserts real defect patches and drawn shapes following
+  X-ray attenuation, and trains YOLO26s on 5,000 synthetic images. The detector
+  reaches F1 0.995 on 1,870 real test images never used for training or
+  threshold selection.
